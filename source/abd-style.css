@@ -1,0 +1,211 @@
+body {
+    background: #222;
+    font-family: 'Indie Flower', cursive;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #6d695c;
+    background-image:
+    repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+    linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+    background-size: 70px 120px;
+}
+
+section {
+    padding:25px 200px;
+    text-align: left;
+	margin: 0px auto;
+	text-align: justify;
+}
+
+.hide {
+    display:none;
+}
+
+#texture {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+    padding-top:50px;
+}
+
+img {
+  max-height:100%;
+  max-width:100%;
+}
+
+.frame {
+  background-color:#ddc;
+  border:solid 5vmin #eee;
+  border-bottom-color:#fff;
+  border-left-color:#eee;
+  border-radius:2px;
+  border-right-color:#eee;
+  border-top-color:#ddd;
+  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+  box-sizing:border-box;
+  display:inline-block;
+  margin:10vh 10vw;
+  padding:3vmin;
+  position:relative;
+  text-align:center;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+.frame:before {
+	border-radius:2px;
+	bottom:-2vmin;
+	box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+	content:"";
+	left:-2vmin;
+	position:absolute;
+	right:-2vmin;
+	top:-2vmin;
+}
+.frame:after {
+	border-radius:2px;
+	bottom:-2.5vmin;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+	content:"";
+	left:-2.5vmin;
+	position:absolute;
+	right:-2.5vmin;
+	top:-2.5vmin;
+}
+
+#logoContainer {
+    background: #222;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.6);
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.6);
+    width: 325px;
+    margin: 0px auto;
+    padding: 15px 0px;
+}
+
+#start {
+    text-align: center;
+    padding-top:50px;
+}
+
+.btn-danger {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+	background: darkred;
+	border: 1px solid #000;
+}
+
+.btnContain {
+    text-align: center;
+}
+
+.frame img, .btn-danger {
+    opacity: 0.75;
+	-webkit-animation-name: flicker;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes flicker {
+	from {
+		opacity: 0.5;
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.45;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	10% {
+		opacity: 0.45;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.70;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.5;
+	}
+	26% {
+		opacity: 0.69;
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.45;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: .6; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: .6; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
+}

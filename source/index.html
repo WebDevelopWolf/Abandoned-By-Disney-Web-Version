@@ -1,0 +1,297 @@
+<html>
+    <meta charset="utf-8"/>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="abd-style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+        <title>Abandoned by Disney - An Online Text Adventure Game</title>
+    </head>
+
+    <body> 
+        <div id="texture">      
+        <div id="frame" class="frame">
+            <img id="logo" src="aby.png" />
+        </div>
+        
+        <section id="start" class="hide">
+            <button class="btn btn-danger" onclick="newGame.gate()">Click Here to Start...</button>
+        </section>
+
+        <section id="gate" class="hide">
+            Near the beachside city of Emerald Isle in North Carolina, Disney began construction of 'Mowgli's Palace' in the late 1990s. 
+            The concept was a Jungle-themed resort with a large, Palace in the centre. Disney blew $30 million on the place... Then they abandoned it. 
+            Mowgli's Palace was contraversial from the start. A ton of high-priced land was questionably obtained for the project.  
+            The houses razed, the land cleared, and there wasn't a thing anyone could do or say about it. Construction was complete.  
+            Visitors stayed at the resort, the surrounding communities were flooded with traffic and irate tourists. Then it all just stopped…
+            You figured it might be cool to do some 'Urban Exploration' at Mowgli's Palace.
+            Take some photos, write about your experience, and probably see if there was anything you could take home as a memento. 
+            In the end you could barely find the place. All you had to go on was an old-as-hell map you received in the mail back in the 90s. Locals were no help either, 
+            they just sneered at you and made rude gestures the second you managed to say 'Where would I find Mowgli's---' 
+            When you finally make it, you are in awe when you reach the front gates of the resort.
+            Hanging on the gate is a sheet of metal, with hand-painted letters scrawled in black. 'ABANDONED BY DISNEY'. 
+            The gates were open enough to walk through.
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.courtyard()">Walk through the gate?</button>
+            </div>
+        </section>
+
+        <section id="courtyard" class="hide">
+            The inner grounds of the place were just as overgrown as the entryway. Palm trees stood untended and ragged among piles of their own coconuts. 
+            Banana plants similarly stood in their own stinking, bug-riddled refuse. There was this sort of clash between order and chaos, 
+            as carefully planted rows of perennial flowers mixed with obnoxious tall weeds. All that remained of any outdoor structures were broken and rotting. 
+            What was most likely an information booth was now simply a pile of assorted debris ravaged by weather. As you look ahead you see a statue and the entrance to the main building.
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.baloo()">Investigate the Statue?</button>
+                <button class="btn btn-danger" onclick="newGame.palace()">Investigate the Palace?</button>
+            </div>
+        </section>
+
+        <section id="baloo" class="hide">
+            On closer inspection you see the statue is of Baloo, the friendly bear from the Jungle Book, 
+            which stands in a sort of courtyard in front of the main building. He is frozen in a jovial wave toward no one, staring into empty space with a silly, 
+            toothy grin as bird shit covers whole swaths of his 'fur' and vines ensnare his platform. You take a photo and look ahead through the viewfinder to the main building. 
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.palaceStatue()">Continue to the Palace?</button>
+            </div>
+        </section>
+
+        <section id="palace" class="hide">
+            You approach the the Palace to find the outside of the building covered in graffiti where the original paint hadn't peeled and chipped away. 
+            The front doors have been taken off their hinges and stolen. Above the gaping maw where they had been, someone had painted ‘ABANDONED BY DISNEY’. 
+            You step inside to a place so stark, that you think people had stolen the very decoration off the walls.
+            Anything that was too big like counters and desks were all resting amid this empty chamber that amplifies each step. 
+            Out of the corner of your eye you see a piece of paper on the floor and three dark doorways.
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.floorplan()">Examine the paper?</button>
+                <button class="btn btn-danger" onclick="newGame.kitchen()">Enter Left Doorway?</button>
+                <button class="btn btn-danger" onclick="newGame.bathroom()">Enter Middle Doorway?</button>
+                <button class="btn btn-danger" onclick="newGame.bedrooms()">Enter Right Doorway?</button>
+            </div>
+        </section>
+
+        <section id="floorplan" class="hide">
+            You carefully pick up the damp page. It's dirty, old and faded but you can just about make out a floorplan of the resort, showing the rooms, a kitchen and a bathroom. 
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.takeFloorplan()">Take the Floorplan?</button>
+                <button class="btn btn-danger" onclick="newGame.leaveFloorplan()">Leave the Floorplan?</button>
+            </div>
+        </section>
+
+        <section id="palace_1" class="hide">
+            You check the floorplan for all the locations that might seem in any way interesting. 
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.kitchen()">Investigate the Kitchen?</button>
+                <button class="btn btn-danger" onclick="newGame.bathroom()">Investigate the Bathrooms?</button>
+                <button class="btn btn-danger" onclick="newGame.bedrooms()">Investigate the Bedrooms?</button>
+            </div>
+        </section>
+
+        <section id="kitchen" class="hide">
+            You step into an industrial food prep area with all the appliances and space. Every glass surface is broken, every door stolen, 
+            every metal surface dented. The entire place smelled like very old piss. The huge freezer, not even remotely cool now, has rows of empty shelf space. 
+            At the back, hooks hang from the ceiling, probably for cuts of meat. As you stand inside for a moment, you notice they are subtly swinging. Each hook swings in at random, 
+            but their movements are so slow that it is almost impossible to see. You figure it’s due to your footsteps, so you stop one from swinging by clutching it in your fist,  
+            then letting go, but within seconds it starts to swing once more. 
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.leavekitchen()">Return to the Palace?</button>
+            </div>
+        </section>
+
+        <section id="bathroom" class="hide">
+            The bathrooms are in much the same state as the rest of the place. Someone has methodically smashed each porcelain commode with coconuts and other implements. 
+            There is about a half inch of rancid, stinking stagnant water on the floor, so you don’t want to stay there very long. What's odd is that the toilets and the sinks all drip, 
+            leak, or just run freely. They should have shut the water off long ago, shouldn’t they?
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.leavebathroom()">Return to the Palace?</button>
+            </div>
+        </section>
+
+        <section id="bedrooms" class="hide">
+            There are plenty of rooms in the resort, but you don’t think you have enough time to look through them all. 
+            The few you do peer into are similarly wrecked and you don’t expect to find anything there. As you explore though you think there is a television or radio in one room, 
+            as you think you hear a quiet conversation. The only phrases you can make out are, 'I didn't believe it', 'I didn't know that' and 'Your father told you'.
+            You run out into the corridor and look back where you came from and forward to a set of external stairs beyond another empty doorway. 
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.leavebedrooms()">Run to the Palace?</button>
+                <button class="btn btn-danger" onclick="newGame.stairs()">Run to the Stairs?</button>
+            </div>
+        </section>
+
+        <section id="stairs" class="hide">
+            Looking over the rail you can see another courtyard below that was previously covered by a class roof that has since been smashed. 
+            You nervously look behind you and confirm you are not being followed by the source of the voices you heard previously. 
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.decendstairs()">Decend the Stairs?</button>
+                <button class="btn btn-danger" onclick="newGame.leavestairs()">Go back to the Rooms?</button>
+            </div>
+        </section>
+
+        <section id="rooms_1" class="hide">
+            The voices you heard previously are now silent. You peek into each room in turn, but you are unable to locate the source of the voices.  
+            Maybe you mind was playing tricks on you?
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.leavestairs()">Return to the Palace?</button>
+                <button class="btn btn-danger" onclick="newGame.stairs()">Return to the Stairs?</button>
+            </div>
+            
+        </section>
+
+        <section id="innerCourtyard" class="hide">
+            You arrive in the previously covered courtyard. Shattered glass is all over the floor and cracks and crinkles underfoot as cautiously move from one side to the other. 
+            Exotic greenery has grown and struggles for light and heat with the local greenery. It’s early afternoon now and the sun hits the green and yellow walls and warms your skin. 
+            It also draws your attention to the far end of the yard where there sits a lifelike statue of a python.
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.python()">Approach the Python Statue?</button>
+                <button class="btn btn-danger" onclick="newGame.lounge()">Explore the Lounge Beyond?</button>
+            </div>
+        </section>
+
+        <section id="python" class="hide">
+            The python, eighty feet long, coiled up and ‘sunning’ itself on a pedestal. Light fell onto the object in the perfect way for a photograph. 
+            So, you approach the python and snap a photo. You stand on your toes and snap another, moving close to get the detail of its face. Slowly, the python lifts its head, 
+            looks directly into your eyes, and slithers off the pedestal, into the foliage. All eighty feet of it. Its head long disappearing before its tail even left the sunning spot. 
+            Disney had released all their animals onto the grounds. You look down at the floorplan, 'Reptile House'.
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger"  onclick="newGame.pythonlounge()">Continue to the Lounge?</button>
+            </div>
+        </section>
+
+        <section id="lounge" class="hide">
+            You look for a place to sit down, as your legs are feeling a bit like jelly at this point. Of course,
+            there is no place to sit down unless you want to recline in the broken glass and dead leaf carpet or haul yourself up onto a desk of questionable reliability. 
+            To the far right of the room you see some stairs and decide to have a seat there until you felt better. The stairway leads downward, below ground level. 
+            Using your camera flash as a sort of improvised flashlight, you can see that the staircase ended in a metal mesh door with a padlock. A sign on the door read 
+            'MASCOTS ONLY! THANK YOU!'
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.mascotsonly()">Break the lock and open the door?</button>
+            <div class="btnContain">
+        </section>
+
+        <section id="mascots" class="hide">
+            It didn't take much to bust the metal plate on the wall that the padlock was hooked to.
+            Time and decay had done most of the work for you and you are able to bend the metal plate enough to pull the screws out of the wall - 
+            something nobody else had apparently thought of, or hadn't been able to do at the time. The area was a very welcomed change from the rest of the building you have seen.
+            Nothing had been stolen or broken, but age and exposure were taking their toll. Tables had note pads and pens, there are clocks...even a punch-in clock and a small break room. 
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.tables()">Investigate the Tables?</button>
+                <button class="btn btn-danger" onclick="newGame.breakRoom()">Investigate the Break Room?</button>
+                <button class="btn btn-danger" onclick="newGame.hallway()">Continue down the Hallway?</button>
+            </div>
+        </section>
+
+        <section id="tables" class="hide">
+            You move closer to the tables and bend over to look at the pens and note pads. First you try a pen but the ink has long since dried up. 
+            Next to the pen is a pencil. You realise you can use this find out what some one last wrote on the pad. You start to rub and a message is revealed. 
+            ‘Dave, Please lock the door when you leave tonight, it was open when I came in this morning, we can’t take the risk, not with guests here now, not after…well...you know.’  
+            With a shudder you put the pencil back. 
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.leavetables()">Return to the Mascot's Lounge?</button>
+            </div>
+        </section>
+
+        <section id="breakRoom" class="hide">
+            It was like one of those post-apocalypse movies where everything is left in the state of evacuation. 
+            An old, static-filled television is attached to a bracket on the wall and long rotted-out food and drink sits on the counters. There is nothing else of note in the area however.
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.leavebreakRoom()">Return to the Mascot's Lounge?</button>
+            </div>
+        </section>
+
+        <section id="hallway" class="hide">
+            As you walk the maze-like hallways, the sights just became more interesting. Desks and tables are knocked over, 
+            papers almost melded with the damp floor and a large carpet of mould is slowly overtaking the rotting crimson carpet.  
+            Wood is disintegrated into mush and clothing items hanging on hooks simply fell to moist threads with age. The light was becoming sparser as you go further into the dank, 
+            suffocating depths of the place. You reach a black and yellow striped door with the words 'CHARACTER PREP 1' stencilled on it.
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.charPrep()">Try to Open the Door?</button>
+            </div>
+        </section>
+
+        <section id="charPrep" class="hide">
+            The door won’t open. You figure this was probably where the costumes were kept. Yet try as I might, whatever angle or trick you try, the door will not budge.  
+            That is, until you give up and start to walk away. That was when there was a slight popping sound and the door creaks open slowly.
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.charPrep1()">Go Through the Door?</button>
+            </div>
+        </section>
+
+        <section id="charPrep_1" class="hide">
+            Inside, the room was completely dark. Pitch black. You use the camera flash to look for a light switch in the wall by the door, but there was nothing. 
+            As you make your search there is a loud electrical buzz. Rows of lights overhead suddenly flashed to life, fading in and out like the rest you passed. 
+            Various Disney costumes hang on the walls, fully put together like strange cartoon cadavers hung from invisible nooses. 
+            There was also Mickey Mouse costume at the centre of the room.
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.costumes()">Photograph the Costumes?</button>
+                <button class="btn btn-danger" onclick="newGame.mickey()">Photograph Micky Mouse?</button>
+            </div>
+        </section>
+
+        <section id="costumes" class="hide">
+            You take a picture of the costumes hanging on the walls. Side shots to show an entire row of frozen, putrid cartoon faces, some with eyes missing. 
+            You reach for the head of a Donald Duck costume and carefully remove it.
+            As you look into the face of the wide-eyed, head there’s a loud clattering sound making you jump with fright. You look down at your feet and there between your shoes 
+            is a human skull. It had fell and shattered to pieces at your feet. You turn around to leave.
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.leavecostumes()">Turn and RUN!!!</button>
+            </div>
+        </section>
+
+        <section id="mickey" class="hide">
+            Unlike the other costumes, Mickey is lying on its back in the centre of the floor like a murder victim. The fur on the costume is rotten and shedding, 
+            creating bare patches. What was even odder, however, was the colouring of the costume. It was like a photo negative of the actual Mickey Mouse. 
+            Black where he should be white and white where he should be black. His normally red overalls were light blue. You snap a picture, you’ve seen enough.
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.leavemickey()">Turn and Leave?</button>
+            </div>
+        </section>
+
+        <section id="charPrep_2" class="hide">
+            That's when Mickey, starts to get up, then climbs to its feet, the costume... or whoever is inside of it, stands at the centre of the room.
+            Its fake face looking directly at you. ‘Hey,’ it says in a hushed, perverted, Mickey voice, 'Wanna see my head come off?' It starts to pull at its own head, its clumsy,
+            gloved fingers around its neck. It works its digits into its neck... so much blood... so much thick, chunky, yellow blood.
+            Hearing a sickening tearing of cloth and flesh you rush past the doorway. You see the final message clawed into the metal...'ABANDONED BY GOD'
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.ending()">RUN!!!</button>
+            </div>
+        </section>
+
+        <section id="ending" class="hide">
+            You never get the pictures out of the camera. You never write the blog entry about it. After you ran from that place, 
+            you knew why Disney didn't want anyone to know about it. They didn't want anyone like you getting in. They didn't want anything like that getting out…
+            <br /><br />
+            <div class="btnContain">
+                <button class="btn btn-danger" onclick="newGame.Start()">Click to play again!</button>
+            </div>
+        </section>
+        </div> 
+
+        <script src="abandoned.js"></script>
+        <script>
+            var newGame = new abandoned();
+            newGame.Start();
+        </script>
+    </body>
+</html>
